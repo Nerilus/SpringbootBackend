@@ -21,10 +21,11 @@ const Home = () => {
   return (
     <div>
          <div className="container">
-          <div className="row d-flex flex-column">
-            <Link to="/add" className="btn btn-primary btn-lg">
+         <Link to="/add" className="btn btn-primary btn-lg">
               Add Content
             </Link>
+          <div className="row d-flex flex-column">
+           
             <div className="col-md-10 mx-auto my-4">
               <table className="table table-hover">
                 <thead className="table-header bg-dark text-white">
