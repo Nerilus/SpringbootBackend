@@ -14,13 +14,14 @@ const AddPost = () => {
 
 
   const submitForm = (e) =>{
-    e.preventDefault();
     setUrl(e.target.value);
     if(isURL(url)){
       setErr('valid url');
     } else {
       setErr('Invalid URL');
     }
+    e.preventDefault();
+   
     const data = {
       url: url,
       word: word
@@ -46,7 +47,11 @@ const AddPost = () => {
                 value={url}
           onChange={(e) => setUrl(e.target.value)}
               />
-                    <p>{err}</p>
+                    <p
+                    style={{
+                      color:"red",
+                    }}
+                    >{err}</p>
             </div>
             <div className="form-group">
               <textarea
