@@ -19,7 +19,15 @@ const Home = () => {
     loadContents();
   }, []);
   return (
+    
     <div>
+    <div className="col-md-12 py-2">
+      <nav className="navbar bg-dark navbar-dark">
+        <Link to={"/"} className="navbar-brand ml-5">
+          Content-filter
+        </Link>
+      </nav>
+    </div>
          <div className="container">
          <Link to="/add" className="btn btn-primary btn-lg">
               Add Content
