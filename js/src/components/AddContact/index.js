@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import {  useDispatch } from "react-redux";
 import { useHistory } from "react-router";
 import { addNewContent } from "../../redux/actions";
-import isURL from 'validator/lib/isURL';
+// import isURL from 'validator/lib/isURL';
 
 const AddPost = () => {
   const [url, setUrl] = useState("");
